@@ -1,38 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+    @font-face {
+        font-family: Roboto;
+        src: url("font/Roboto-Regular.ttf");
+    }
 
-.container-grid{
-    display: grid;
-    grid-template: 1fr 1fr 4fr / 1fr 4fr;  
-}
+    @font-face {
+        font-family: Roboto;
+        src: url(font/Roboto-Bold.ttf);
+        font-weight: bold;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-grid{
+        display: grid;
+        grid-template: 1fr 1fr 4fr / 1fr 3fr;  
+    }
+
+
+    /*Designing Side-Bar */
+    .side-bar{
+        grid-row: 1 / 4;
+        grid-column: 1 / 2;
+        display: grid;
+        grid-template-rows: repeat(3, 50px); 
+        gap: 130px;
+        justify-content: space-around;
+        background-color: #60a5fa;
+        color: white;
+
+    }
+
+    /* Side-bar Design-Start */
+    .dashboard{
+        align-self: center;
+        font-size: 150%;
+        font-family: Roboto;
+        font-weight: bold;
+    }
+
+
+    .upper-layer,
+    .lower-layer{
+        display: grid;
+        align-self: center;
+        font-family: Roboto;
+        gap: 15px;
+        font-weight: bold;
+        font-size: 115%;
+    }
+
+
+   /* Side-bar Design-End */
 
 
 
-.side-bar{
-    grid-row: 1 / 4;
-    grid-column: 1 / 2;
 
-}
+    .search-bar{
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
 
 
 
-.search-bar{
-    grid-row: 1 / 2;
+    .dashboard-bar{
+    grid-row: 2 / 3;
     grid-column: 2 / 3;
-}
+    }
 
 
 
-.dashboard-bar{
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-}
-
-
-
-.content{
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-}
+    .content{
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
