@@ -285,7 +285,8 @@
     }
 
     .announcements-grid > div > p {
-        font-size: 65%
+        font-size: 65%;
+        color: #9ca3af;
     }
 
     hr{
@@ -300,19 +301,55 @@
     .trending{
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        font-family: Roboto;
+        font-weight: bold;
     }
 
-    /* Content Design Start */
+    /* Trending Design Start */
+
+
+    .trending-grid{
+        display: grid;
+        font-family: Roboto;
+        background-color: white;
+        border-radius: 15px;
+        padding: 30px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+
+    .trending-grid > div {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .trending-grid > div > div > h6{
+        font-size: 90%;
+        font-family: Roboto;
+        font-weight: normal;
+    }
+
+
+
+    .trending-grid > div > img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    } 
+
+    .trending-grid > div > div > p{
+        font-size: 65%;
+        color: #9ca3af;
+        font-weight: normal;
+        margin-top: 5px;
+    }
 
 
 
 
 
-
-
-
-
-
-
-
-    /* Content Design End */
+    /* Trending Design End */
