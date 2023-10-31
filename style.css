@@ -24,7 +24,7 @@
 
     .container-grid{
         display: grid;
-        grid-template: 1fr 1fr 4fr / 1fr 4fr;
+        grid-template: minmax(100px,1fr) minmax(100px,1fr) minmax(400px,4fr) / 1fr 4fr;
         width: 100%;
         height: 100%;
     }
@@ -215,6 +215,7 @@
         grid-template-columns: 3fr 1fr;
         grid-template-rows: 1fr 1fr;
         background-color: #e5e7eb;
+        gap: 30px;
 
     }
 
@@ -226,6 +227,7 @@
         margin-left: 10px;
         margin-top: 20px;
         font-size: 120%;
+        
     }
 
     /* Design Start .project-grids */
@@ -257,7 +259,43 @@
     .announcements{
         grid-column: 2 / 3;
         grid-row: 1 / 2;
+        font-family: Roboto;
+        font-weight: bold;
+        margin-top: 30px;
+
     }
+
+    /*Announcement Design Start*/
+
+
+
+    .announcements-grid{
+        display: grid;
+        font-family: Roboto;
+        font-weight: normal;
+        background-color: white;
+        border-radius: 15px;
+        padding: 30px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        margin-top: 10px;
+        font-size: 130%;
+    }
+
+    .announcements-grid > div > p {
+        font-size: 65%
+    }
+
+    hr{
+        margin-top: 5px
+    }
+
+
+
+
+    /* Announcement Design End */
 
     .trending{
         grid-column: 2 / 3;
