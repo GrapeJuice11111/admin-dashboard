@@ -129,7 +129,9 @@
     }
 
     .profile-picture > img{
-        border-radius: 50px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
     }
 
      
@@ -143,9 +145,64 @@
 
 
     .dashboard-bar{
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 0.5fr 6fr;
+        justify-items: start;
+        gap: 20px;
+        align-items: center;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: -100px;
     }
+
+    /*Dashboard Bar Design Start */
+
+    .smallfont-dashboard,
+    .bigfont-dashboard{
+        font-family: Roboto;
+        font-weight: bold;
+    }
+
+
+    .bigfont-dashboard{
+        font-size: 140%;
+
+    }
+
+    .profile-picture-big > img{
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+     
+     .buttons-bar{
+        display: flex;  
+        gap: 30px;  
+     }
+
+
+    .buttons-bar > button{
+        border: 1px solid #3b82f6;
+        background-color: #3b82f6;
+        border-radius: 50px;
+        color: white;
+        font-family: Roboto;
+        font-weight: bold;
+        min-width: 75px;
+        min-height: 35px;
+        padding: 3px;
+     }
+
+
+
+
+
+    /*Dashboard Bar Design End */
 
 
 
